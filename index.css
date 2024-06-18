@@ -1,0 +1,228 @@
+/* styles.css */
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eef6ee;
+    color: #333;
+}
+
+header {
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titre {
+    width: 550px;
+}
+
+.logo {
+    height: auto;
+    width: 200px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.green {
+    color: rgb(88, 169, 88);
+}
+
+/* .hero {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #00796b;
+    font-size: 2.5em;
+}
+
+.hero p {
+    color: #004d40;
+    font-size: 1.2em;
+} */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 800px;
+    margin: 20px auto;
+}
+.hero img {
+    max-width: 200px;
+    height: auto;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+.hero-content h1 {
+    margin: 0 0 10px 0;
+}
+.hero-content p {
+    margin: 0 0 10px 0;
+}
+
+
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 400px;
+    margin: 20px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: white;
+
+    
+}
+.imgcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    justify-content: center;
+}
+.imgcard img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+}
+.text h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    color: rgb(88, 169, 88);
+}
+
+.numero {
+    font-size: 24px; /* Taille du numéro */
+    font-weight: bold; /* Gras pour le numéro */
+    margin: 0;
+}
+
+.contact {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 200;
+    
+}
+
+
+
+.contact-info {
+    font-size: 1.1em;
+}
+
+.contact-info a {
+    color: #c62828;
+    text-decoration: none;
+}
+
+contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    display: felx;
+    flex-direction: row;
+   
+}
+
+.list-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.list-footer li {
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 768px) {
+
+    .titre   {
+        width: 250px;
+    }
+
+    .hero {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+        padding: 0;
+    }
+    .hero img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    header, footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-footer {
+        flex-direction: column;
+    }
+
+    .list-footer li {
+        margin: 5px 0;
+    }
+}
